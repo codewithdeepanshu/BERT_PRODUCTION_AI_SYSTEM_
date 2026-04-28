@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI Backend",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "api.main:app",
+        "--reload"
+      ],
+      "jinja": true
+    },
+    {
+      "name": "Streamlit UI",
+      "type": "python",
+      "request": "launch",
+      "module": "streamlit",
+      "args": [
+        "run",
+        "ui/Home.py"
+      ]
+    }
+  ]
+}
